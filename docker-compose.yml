@@ -1,4 +1,4 @@
-version: '3.7'
+version: '3'
 
 services:
   keila:
@@ -6,19 +6,19 @@ services:
     container_name: keila
     restart: unless-stopped
     ports:
-      - "80:80"  # Expose port 4000 ke port 80 (akses melalui browser)
+      - "80:80"
     environment:
       DB_URL: postgres://keila_user:keila_password@db/keila_db
-      SECRET_KEY_BASE: RYQHmEUGGMbskJmy0JLInFlfFOIHuwpJW6pY8n7ZQGRJ3bKCdY1RLK1Nh23E06B7
-      URL_HOST: www.keila-komdat-p2-kelompok7.me
-      URL_SCHEMA: http  # Gunakan "http" jika tidak menggunakan SSL
-      PORT: 80  # Port internal untuk Keila
+      SECRET_KEY_BASE: <your-secret-key-base>
+      URL_HOST: <your-domain-or-ip-address>
+      URL_SCHEMA: http
+      PORT: 80 
       MAILER_TYPE: smtp
-      MAILER_SMTP_HOST: smtp.gmail.com
+      MAILER_SMTP_HOST: <your-smtp-host>
       MAILER_SMTP_PORT: 587
-      MAILER_SMTP_USER: ahmadsubhan@apps.ipb.ac.id
-      MAILER_SMTP_PASSWORD: "umrx nofd iyzc oiar"
-      MAILER_SMTP_FROM_EMAIL: ahmadsubhan@apps.ipb.ac.id
+      MAILER_SMTP_USER: <your-smtp-user>
+      MAILER_SMTP_PASSWORD: <your-smtp-password>
+      MAILER_SMTP_FROM_EMAIL: <your-stmp-email>
       MAILER_ENABLE_SSL: "false"
       MAILER_ENABLE_STARTTLS: "true"
       MAILER_ENABLE_STARTTLS: "true"
