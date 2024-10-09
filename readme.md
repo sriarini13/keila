@@ -95,7 +95,7 @@ Kode yang muncul akan diletakkan di `MAILER_SMTP_HOST` pada file konfigurasi `do
     - Pada bagian `URL_HOST` isi dengan nama domain atau alamat IP
     - Pada bagian `MAILER_SMTP_HOST` isi dengan `smtp.gmail.com`
     - Pada bagian `MAILER_SMTP_USER` isi dengan email yang digunakan
-    - Pada bagian `MAILER_SMTP_PASSWORD` isi dengan kode yang muncul dari [App passwords](###-siapkan-akun-untuk-SMTP)
+    - Pada bagian `MAILER_SMTP_PASSWORD` isi dengan kode yang muncul dari [App passwords](#siapkan-akun-untuk-SMTP)
     - Pada bagian `MAILER_SMTP_FROM_EMAIL` isi dengan email yang digunakan
 
 7.  Jalankan Keila
