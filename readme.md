@@ -91,7 +91,7 @@ Kode yang muncul akan diletakkan di `MAILER_SMTP_HOST` pada file konfigurasi `do
     volumes:
       postgres_data:
     ```
-    - Pada bagian `SECRET_KEY_BASE` isi dengan string yang muncul pada [langkah 5](#5-generate-random-secret-key-base)
+    - Pada bagian `SECRET_KEY_BASE` isi dengan string yang muncul pada [langkah 5](#5-generate-random-secret-key-base,-salin-string-yang-muncul)
     - Pada bagian `URL_HOST` isi dengan nama domain atau alamat IP
     - Pada bagian `MAILER_SMTP_HOST` isi dengan `smtp.gmail.com`
     - Pada bagian `MAILER_SMTP_USER` isi dengan email yang digunakan
