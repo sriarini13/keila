@@ -1,4 +1,38 @@
-# Instalasi
+<h1 align="center"><img src="./logo.svg" alt="The Keila logo is a stylized elephant">Keila - An Open Source Newsletter Tool</h1>
+
+<details>
+  <summary>Anggota Kelompok</summary>
+  <ul>
+    <li>G6401221021 - Maulana Ahmad Baihaqi</li>
+    <li>G6401221023 - Ahmad Subhan Daryhadi</li>
+    <li>G6401221029 - Sri Arini Ismayasari</li>
+    <li>G6401221054 - Raihana Luthfia</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Daftar Isi</summary>
+  <ol>
+    <li><a href="#sekilas-tentang">Sekilas Tentang</a></li>
+    <li><a href="#instalasi">Instalasi</a>
+      <ul>
+        <li><a href="#siapkan-akun-untuk-smtp">Siapkan Akun Untuk SMTP</a></li>
+        <li><a href="#proses-instalasi">Proses Instalasi</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>
+
+## Sekilas Tentang
+Keila adalah alternatif Open Source untuk alat newsletter seperti Mailchimp atau Sendinblue.
+
+Dengan Keila, kita dapat dengan mudah mengirim kampanye newsletter dan membuat formulir pendaftaran.
+
+Untuk newsletter yang lebih kecil, kita dapat menggunakan kotak masuk email kita sendiri untuk mengirim kampanye. Untuk proyek newsletter yang lebih besar, Keila mendukung AWS SES, Sendgrid, Mailgun, dan Postmark selain dari SMTP.
+
+![Screenshot of the Keila campaign editor showing the WYSIWYG editor and the default template](https://www.keila.io/_astro/keila-2024-05-01.BUp8L2VZ.png)
+
+## Instalasi
 
 ### Siapkan Akun Untuk SMTP
 1.  Gunakan email IPB
@@ -11,7 +45,7 @@
 8.  Buka menu App passwords dan ketikkan App name
 9.  Tekan Create dan salin kode yang muncul
 
-Kode yang muncul akan diletakkan di `MAILER_SMTP_HOST` pada file konfigurasi `docker-compose.yml`. Aplikasi ini memerlukan email untuk mengirim kode verifikasi ke user.
+    Kode yang muncul akan diletakkan di `MAILER_SMTP_HOST` pada file konfigurasi `docker-compose.yml`. Aplikasi ini memerlukan email untuk mengirim kode verifikasi ke user.
 
 ### Proses Instalasi
 
@@ -20,7 +54,7 @@ Kode yang muncul akan diletakkan di `MAILER_SMTP_HOST` pada file konfigurasi `do
     $ ssh root@202.73.25.70 -p 10207
     ```
 
-2.  Pastikan seluruh paket sistem up-to-date, dan install seluruh kebutuhan sisrem seperti Docker dan Docker Compose
+2.  Pastikan seluruh paket sistem up-to-date, dan install seluruh kebutuhan sistem seperti Docker dan Docker Compose
     ```
     $ sudo apt update
     $ sudo apt install docker.io
@@ -33,7 +67,7 @@ Kode yang muncul akan diletakkan di `MAILER_SMTP_HOST` pada file konfigurasi `do
     $ docker-compose --version
     ```
 
-4.  Buat dan masuk ke dalam directory keila
+4.  Buat dan masuk ke dalam directory `keila`
     ```
     $ mkdir keila
     $ cd keila
@@ -108,4 +142,4 @@ Kode yang muncul akan diletakkan di `MAILER_SMTP_HOST` pada file konfigurasi `do
     $ docker-compose logs -f
     ```
 
-9. Kunjungi alamat IP web server untuk meneruskan instalasi
+9.  Kunjungi alamat IP web server untuk meneruskan instalasi
