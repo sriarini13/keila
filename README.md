@@ -166,3 +166,76 @@ Untuk newsletter yang lebih kecil, kita dapat menggunakan kotak masuk email kita
     ```
 
 9.  Kunjungi alamat IP web server untuk meneruskan instalasi
+
+
+### Cara Menggunakan Keila-Newsletter
+
+1. Sign in atau Sign up menggunakan akun google kalian
+   ![komdat1](https://github.com/user-attachments/assets/8a8cbb65-ed1b-423c-8c50-fd044f792293)
+
+2. Pada saat masuk pilih CreateProject
+   ![komdat 2](https://github.com/user-attachments/assets/f11995e8-f07c-4734-93b6-3772a610fb79)
+
+3. Setelah itu pilih CreateYourFirstSender
+   ![komdat 4](https://github.com/user-attachments/assets/859038bd-959b-40d4-ba25-e0efbdf022ea)
+
+4. Setting sender sesuai kebutuhan
+   ![komdat 9](https://github.com/user-attachments/assets/f0442f4c-e08b-4736-a717-3ed5b46749e9)
+   ![komdat 10](https://github.com/user-attachments/assets/12043d8d-de19-4107-b62a-77df4fc838aa)
+
+   Untuk mendapatkan Pass akun Google bisa klik link ini https://security.google.com/settings/security/apppasswords.
+   
+6. Masukkan alamat email yang akan dituju bisa dimasukkan secara manual atau menggunakan data dari exel.
+   ![komdat 6](https://github.com/user-attachments/assets/2f189558-25d9-4ce0-97c2-6de81edf10c0)
+   ![1  create contact #1](https://github.com/user-attachments/assets/f67e7412-f681-438c-a0f0-5505ea18e262)
+   ![komdat 7](https://github.com/user-attachments/assets/b1524a5b-598e-4d83-89df-3d1b3492a49c)
+
+7. Setelah itu CreateCampaign
+   ![komdat 8](https://github.com/user-attachments/assets/dc6863cf-ab3a-4f08-abff-11adf241f264)
+   ![image](https://github.com/user-attachments/assets/cfb8f984-38ae-48d3-8ce4-83885b5f4e14)
+   Campaign dapat berbentuk web, teks atau lainnya. 
+   ![image](https://github.com/user-attachments/assets/32daafe7-f21c-4290-86ff-a6f6f033ea69)
+   ![image](https://github.com/user-attachments/assets/b7d9582e-0f75-4a61-a67d-8e3fef3d84be)
+
+8. Setelah selesai mengedit pilih send untuk langsung mengirim dan Schedulle untuk merencanakan waktu pengiriman.
+   
+9. Setelah itu akan muncul stats terkait campaign yang kita buat
+    ![image](https://github.com/user-attachments/assets/33fb2908-14e5-46f5-b0f4-585f9d7aaa5a)
+
+10. Selain itu keila juga memiliki fitur pembuatan form
+    a. Membuat form untuk mengundang contact baru.
+    ![3  buat form](https://github.com/user-attachments/assets/3801b137-937c-4ed4-9127-0d6dc77e1093)
+
+    b. Kita bisa mengirimkan link form kepada customer lalu customer dapat mengisi form tersebut
+    ![4  isi form](https://github.com/user-attachments/assets/725f90ae-7735-4880-889e-3fd9eca10275)
+
+    c. Data Customer akan otomatis masuk kedalam list Contact Sender
+    ![5  new contact setelah isi form](https://github.com/user-attachments/assets/cd027a11-bca6-45cd-9ffe-346dd6ab8a1c)
+
+11. Fitur Segmentation
+    ![image](https://github.com/user-attachments/assets/983661a8-7e27-4858-8c7a-0704923f7e78)
+    fitur ini membantu sender untu mensortir penerima campaign dengan beberapa kriteria.
+
+12. Template Campaign
+    ![image](https://github.com/user-attachments/assets/bb8ad293-c54c-4098-a152-e4749dd0459f)
+    Pada keila juga kalian bisa membuat template campaign kalian sendiri.
+
+
+
+    
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+   
+
