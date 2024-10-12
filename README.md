@@ -5,6 +5,7 @@
   <ul>
     <li>G6401221021 - Maulana Ahmad Baihaqi</li>
     <li>G6401221023 - Ahmad Subhan Daryhadi</li>
+    <li>G6401221027 - Dicky Anugrah</li>
     <li>G6401221029 - Sri Arini Ismayasari</li>
     <li>G6401221054 - Raihana Luthfia</li>
   </ul>
