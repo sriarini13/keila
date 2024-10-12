@@ -17,7 +17,8 @@
     <li><a href="#sekilas-tentang">Sekilas Tentang</a></li>
     <li><a href="#instalasi">Instalasi</a>
       <ul>
-        <li><a href="#siapkan-akun-untuk-smtp">Siapkan Akun Untuk SMTP</a></li>
+        <li><a href="#siapkan-akun-untuk-smtp">Siapkan Akun untuk SMTP</a></li>
+        <li><a href="siapkan-akun-untuk-captcha-opsional">Siapkan Akun untuk Captcha</a></li>
         <li><a href="#proses-instalasi">Proses Instalasi</a></li>
       </ul>
     </li>
@@ -35,7 +36,7 @@ Untuk newsletter yang lebih kecil, kita dapat menggunakan kotak masuk email kita
 
 ## Instalasi
 
-### Siapkan Akun Untuk SMTP
+### Siapkan Akun untuk SMTP
 1.  Gunakan email IPB
 2.  Masuk ke pengaturan google account
 3.  Pada tab security, pilih 2-Step Verification
@@ -47,6 +48,17 @@ Untuk newsletter yang lebih kecil, kita dapat menggunakan kotak masuk email kita
 9.  Tekan Create dan salin kode yang muncul
 
     Kode yang muncul akan diletakkan di `MAILER_SMTP_HOST` pada file konfigurasi `docker-compose.yml`. Aplikasi ini memerlukan email untuk mengirim kode verifikasi ke user.
+
+### Siapkan Akun untuk Captcha (Opsional)
+1.  Kunjungi halaman [hCaptcha](https://www.hcaptcha.com/)
+2.  Jika belum punya akun, pilih menu Sign Up terlebih dahulu
+3.  Setelahnya akan diarahkan menuju menu billing, pilih Basic (Free) untuk menggunakan versi gratisnya
+4.  Kemudian selesaikan menjawab pertanyaan yang muncul sampai masuk pada bagian proses pembuatan akun
+5.  Setelah proses pembuatan akun selesai akan diarahkan pada halaman welcome
+6.  <span id="sitekey">Salin kode Sitekey yang muncul</span>
+7.  <span id="secret">Pada point Secret, generata kode dan salin kode yang muncul</span>
+
+    Kode yang muncul akan diletakkan di `CAPTCHA_SITE_KEY` dan `CAPTCHA_SECRET_KEY` pada file konfigurasi `docker-compose.yml`. Captcha akan digunakan dalam proses registrasi user.
 
 ### Proses Instalasi
 
@@ -132,6 +144,16 @@ Untuk newsletter yang lebih kecil, kita dapat menggunakan kotak masuk email kita
     - Pada bagian `MAILER_SMTP_USER` isi dengan email yang digunakan
     - Pada bagian `MAILER_SMTP_PASSWORD` isi dengan kode yang muncul dari [App passwords](#siapkan-akun-untuk-SMTP)
     - Pada bagian `MAILER_SMTP_FROM_EMAIL` isi dengan email yang digunakan
+    
+    <span>Tambahan pengaturan (opsional), pengaturan ini bisa diletakkan dibawah `MAILER_ENABLE_STARTTLS: "true"`</span>
+    <ul>
+      <li>Pada bagian <code>CAPTCHA_PROVIDER</code> isi dengan <code>hcaptcha</code></li>
+      <li>Pada bagian <code>CAPTCHA_SITE_KEY</code> 
+      isi dengan kode sitekey yang muncul di akun <a href="#sitekey">hcaptcha</a></li>
+      <li>Pada bagian <code>CAPTCHA_SECRET_KEY</code> 
+      isi dengan kode secret yang muncul di akun <a href="#secret">hcaptcha</a></li>
+      <li>Pada bagian <code>CAPTCHA_URL</code> isi dengan <code>https://hcaptcha.com/siteverify</code></li>
+    </ul>
 
 7.  Jalankan Keila
     ```
