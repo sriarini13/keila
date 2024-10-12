@@ -166,3 +166,11 @@ Untuk newsletter yang lebih kecil, kita dapat menggunakan kotak masuk email kita
     ```
 
 9.  Kunjungi alamat IP web server untuk meneruskan instalasi
+
+### Demo Pemakaian
+
+1. Login atau Sign up ke Website Keila dengan menggunakan email
+![komdat1](https://github.com/user-attachments/assets/1f5059c9-4199-4b5d-8fef-b56acd577b7a)
+
+2. Pilih button Create Project
+![komdat 2](https://github.com/user-attachments/assets/58b0e91f-8485-46ac-b70f-a66baabc95f8)
